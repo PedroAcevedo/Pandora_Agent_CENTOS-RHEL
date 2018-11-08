@@ -9,7 +9,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 echo "---------------------Pedro Acevedo The ScriptingMan----------------------------"
 #download pandora agent for CentOS/RHEL
-wget -e https_proxy=172.17.3.10:8080 -O pandorafms_agent_unix-7.0NG.728-1.noarch.rpm https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/728/RHEL_CentOS/pandorafms_agent_unix-7.0NG.728-1.noarch.rpm/download -P .
+wget -O pandorafms_agent_unix-7.0NG.728-1.noarch.rpm https://sourceforge.net/projects/pandora/files/Pandora%20FMS%207.0NG/728/RHEL_CentOS/pandorafms_agent_unix-7.0NG.728-1.noarch.rpm/download -P .
 #intall ignoring dependencies
 yum install pandorafms_agent_unix-7.0NG.728-1.noarch.rpm -y
 #replace localhost for the server ip
